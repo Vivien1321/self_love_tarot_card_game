@@ -1,0 +1,138 @@
+@font-face {
+    font-family: "Fashion Norsa";
+    src: url("Font/FashionNorsa-Regular.ttf") format("truetype");
+}
+
+
+@font-face {
+    font-family: "Woman Font"; /* Unique name for the new font */
+    src: url("Font/WomanFontRegular.ttf") format("truetype");
+}
+
+body {
+   
+  /*background-image: url(Background/background_without_cards.png); */
+  /* background: linear-gradient(to left, #ffbfaf, #fff3d9); */
+  background: linear-gradient(180deg, rgba(237, 30, 121, 0.35), rgba(255, 243, 217, 1));
+
+}
+
+.card-container {
+ 
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: left;
+    padding: 100px;
+    border-radius: 10px;
+    margin-bottom: 100 px;
+}
+
+.card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.questions {
+    font-size: 1rem;
+    max-width: 440px;
+    font-family: "Woman Font";
+    margin-right: 300px;
+}
+
+.card-image img {
+    max-width: 350px;
+    border-radius: 8px;
+    box-shadow: 8px 8px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 300px;
+}
+
+.buttons {
+    margin-top: 100px;
+    display: flex;
+    gap: 475px;
+    justify-content: center;
+}
+
+button {
+    color: #000000;
+    background-color: #efcbf8;
+    border: 5px solid #000;
+    font-weight: 500;
+    padding: 10px 20px;
+    font-family: "Fashion Norsa";
+    font-size: 2.1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: #f790e5;
+    color: #000000;
+}
+
+input {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#results-container {
+    margin-top: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+.rating button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 20%;
+    background-color: #efcbf8;
+    cursor: pointer;
+    font-family: "Woman Font";
+    text-align: center;
+    font-size: 20px;
+}
+
+.rating button:hover,
+.rating button.selected {
+    background-color: #f790e5;
+    color: white;
+}
+
+#progress-bar-container {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 20px;
+    background-color: #efcbf8;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#progress-bar {
+    height: 100%;
+    width: 100%;
+    background-color: #f790e5;
+    transition: width 0.3s ease;
+}

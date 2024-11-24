@@ -1,0 +1,81 @@
+@font-face {
+    font-family: "Fashion Norsa";
+    src: url("Font/FashionNorsa-Regular.ttf") format("truetype");
+}
+
+
+@font-face {
+    font-family: "Woman Font"; /* Unique name for the new font */
+    src: url("Font/WomanFontRegular.ttf") format("truetype");
+}
+
+body {
+   
+  background-image: url(Background/background_with_cards.png); 
+  /* background: linear-gradient(to left, #ffbfaf, #fff3d9); */
+
+}
+
+.hero {
+ /* Use flexbox for horizontal alignment */
+
+
+    margin-top: 100px;
+    padding:0 200px;
+    gap: 50px;
+}
+
+
+.container {
+    display:flex;
+    flex-direction: column; /* Stack text and button vertically */
+    max-width: 90%;
+    align-items: flex-start;
+  /*  height: 100%; /* Full height container for centering */
+  /*  align-items: center; /* Center content vertically */
+  /*  justify-content: flex-end; /* Align content to the left */
+}
+
+
+
+h1 {
+    font-size: 7rem;
+    color: #000000;
+    font-family: "Fashion Norsa";
+    text-align: left;
+ /* Add some space from the edge if needed */
+
+  
+  }
+
+h2 {
+    font-size: 1.5rem;
+    color: #000000;
+    font-family: "Woman Font", bold;
+    text-align: left;
+    margin-bottom: 100px;
+}
+
+.onwards-btn {
+    color: #000000;
+    background-color: #efcbf8;
+    border: 5px solid #000;
+    font-weight: 500;
+    padding: 10px 20px;
+    font-family: "Fashion Norsa";
+    font-size: 2.1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.onwards-btn:hover {
+    background-color: #f790e5;
+    color: #000000;
+}
+
+
+
+
+
+
