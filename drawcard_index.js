@@ -59,7 +59,7 @@ const cards = [
       name: 'Courage',
       image: 'Images/Courage.jpg',
       questions: [
-          'How often do you act courageously when faced with fear?',
+          'How often do you act courageously to stand up for yourself or others in challenging situations?',
           'How courageous would you like to be in the future?'
       ]
   },
@@ -139,7 +139,7 @@ const cards = [
       name: 'Creativity',
       image: 'Images/Creativity.jpg',
       questions: [
-          'How often do you express your creativity?',
+          'How creative do you consider yourself to be?',
           'How creative would you like to be in the future?'
       ]
   },
